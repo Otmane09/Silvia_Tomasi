@@ -6,43 +6,76 @@
         <title>Ordina la tua torta da Silvia</title>
 
         <style>
-            h1, h2 {
-                text-align: center;
+
+            button {
+                border: 1.5px solid;
+                size: 50px 50px;
+                background-color: beige;
             }
+
+            hr {
+                width: 900px;
+                border: 1px solid;
+            }
+
+            a {
+                text-align: left;
+                color:blueviolet;
+            }
+
+            input {
+                border: 1.5px solid;
+                color:rgb(100, 157, 214);
+                width: 133px;
+                
+            }
+
+            textarea {
+
+                border: 1.5px solid;
+                color:rgb(100, 157, 214);
+                width: 250px;
+
+            }
+            
+            body {
+                text-align: center;
+                background-color: rgb(251, 231, 230);
+            }
+
+            #pie_di_pagina {
+                font-size: smaller;
+            }
+
+            h1, h2, p{
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                
+            }
+
         </style>
     </head>
 
     <body>
 
+        <span><b><a href="http://127.0.0.1:3000/Users/otmanekhaddadi/Documents/Programmazione 1/css/contact-me.html">Contact me</a></b></span>
+        <span><b><a href="http://127.0.0.1:3000/Users/otmanekhaddadi/Documents/Programmazione 1/css/about-me.html">About me</a></b></span>
+           
+
         <form action="http://127.0.0.1:3000" method="get">
-            <h1>Silvia Tomasi | Pastry chef</h1>
-            <p>BREVE DESCRIZIONE CHE ANCORA NON HO!!</p>
-            <h2>Ordina la tua torta online</h2>
-            <div>
-                <ol>
-                    <li><b>Calcola</b></li>
-                    <p>Inserisci il numero dei tuoi invitati</p>
-                    
-                    <li><b>Scegli</b></li>
-                    <p>Puoi scegliere ed ordinare la tua torta preferita</p>
-                    
-                    <li><b>Crea</b></li>
-                    <p>Puoi creare e ordinare la tua torta ideale scegliendo tra le varie opzioni</p>
-                
-                </ol>
-            </div>
             
-            <hr>
+            <h1>Silvia Tomasi | Pastry chef</h1>
+            <h2>Ordina la tua torta online</h2>
 
             <div>
-                <fieldset>
-                    <legend><b>Numero di persone</b></legend>
-                    <label for="numero">
-                        <span>Inserisci il numero di persone:</span>
-                        <input type="text" id="numero" name="numero">
-                    </label>
-                </fieldset>
-    
+                <p><b>Calcola</b></p>
+                <p>Inserisci il numero dei tuoi invitati</p>
+                
+                <p><b>Scegli</b></p>
+                <p>Puoi scegliere ed ordinare la tua torta preferita</p>
+                
+                <p><b>Crea</b></p>
+                <p>Puoi creare e ordinare la tua torta ideale scegliendo tra le varie opzioni</p>
+            
             </div>
 
             <hr>
@@ -50,12 +83,10 @@
             <!-- Scegli la tua torta -->
 
             <div>
-
-                 <fieldset>
-                    <legend><b>Scegli la tua torta</b></legend>
+                    <p><b>Scegli la tua torta</b></p>
                     <div>
                         Tipo:
-                        <select name="classiche" id="classiche">
+                        <select name="scegli-la_tua_torta" id="scegli-la_tua_torta">
                         
                             <option value="xx">Seleziona la tua torta</option>
                             <option value="Crostata di frutta">Crostata di frutta</option>
@@ -65,24 +96,19 @@
                         
                         </select>
                     </div>
-                   
-                    <hr>
 
                     <div>
-                        <label for="data">
-                            Data di consegna:
+
+                        <label for="data">Data di consegna:</label>
                             <input type="date" id="data" name="data" >
-                           
-                        </label>
-                    </div>
 
-                    <hr>
+                    </div>
 
                     <div>
-                        <textarea name="note" id="note" cols="30" rows="5">Note</textarea>
-                    </div>
 
-                </fieldset>
+                        <textarea name="note" id="note" cols="30" rows="5">Note</textarea>
+
+                    </div>
             </div>
 
             <hr>
@@ -90,8 +116,8 @@
             <!--Crea la tua torta-->
 
             <div>
-                <fieldset>
-                    <legend><b>Crea la tua torta</b></legend>
+               
+                    <p><b>Crea la tua torta</b></p>
                     <div>
                         <Span>Base:</Span>
                         <select name="La base" id="La base">
@@ -135,63 +161,50 @@
                         </select>
                     </div>
 
-                    <hr>
-
                     <div>
-                        <label for="data">
-                            Data di consegna:
+                        <label for="data">Data di consegna:</label>
                             <input type="date">
-                        </label>
                     </div>
-
-                    <hr>
 
                     <div>
                         <textarea name="note" id="note" cols="30" rows="5">Note</textarea>
                     </div>
 
-                </fieldset>
-
                 <hr>
 
                 <!--I tuoi dati-->
         
-                <fieldset>
-                    <legend><b>I tuoi dati</b></legend>
+            
+                    <p><b>I tuoi dati</b></p>
                     <div>
-                        <label for="nome">
-                            <span>Nome:</span>
+                        <label for="nome"><span>Nome:</span></label>
                             <strong><abbr title="richiesto">*</abbr></strong>
                             <input type="text" id="nome" name="I tuoi dati" autofocus required>
-                        </label>
+                        
 
-                        <label for="cognome">
-                            <span>Cognome:</span>
+                        <label for="cognome"><span>Cognome:</span></label>
                             <strong><abbr title="richiesto">*</abbr></strong>
                             <input type="text" id="cognome" name="I tuoi dati" autofocus required>
-                        </label>
+                        
 
-                        <label for="telefono">
-                            <span>Telefono:</span>
+                        <label for="telefono"><span>Telefono:</span></label>
                             <strong><abbr title="richiesto">*</abbr></strong>
                             <input type="text" id="telefono" name="I tuoi dati" autofocus required>
-                        </label>
+                        
 
-                        <label for="e-mail">
-                            <span>E-mail:</span>
+                        <label for="e-mail"><span>E-mail:</span></label>
                             <strong><abbr title="richiesto">*</abbr></strong>
                             <input type="email" id="e-mail" name="I tuoi dati" autofocus required>
-                        </label>
+                        
                     </div>
 
-                    <hr>
-
                     <div>
+                    
                         <button>Ordina la tua torta</button>
                         <button>Reset</button>
     
                     </div>
-                </fieldset>
+                
         </form>
 
     </body>
@@ -199,7 +212,7 @@
     <hr>
 
     <footer>
-        <p>I campi obbligatori sono contrassegnati da <strong><abbr title="richiesto">*</abbr></strong></p>
+        <p id="pie_di_pagina">I campi obbligatori sono contrassegnati da <strong><abbr title="richiesto">*</abbr></strong></p>
     </footer>
 
 
