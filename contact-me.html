@@ -1,89 +1,110 @@
 <!DOCTYPE html>
 <html lang="it">
     <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=widht-device" />
-        <title>contact-me</title>
+        <meta charset="utf-8 ">
+        <meta name="viewport" content="width=width-device" initial-scale="1">
+        <title>Contact me</title>
 
         <style>
-            h3, p{
-                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            }
-            
-            .box {
-                margin:auto;
-                border-collapse: collapse;
-                border: 3px solid;
-                border-radius: 3pc;
-                width: 600px;
-                height: 625px;
-                text-align: center;
-                box-shadow: 10px 10px 20px grey;
+
+
+            body {
+                margin: 0px;
+                background-color: #f1f1f1f1;
             }
 
-            .img-background {
-                background-image: url(st-sfondo-2.jpeg);
-                background-position: center center;
-                background-size: contain;
-                background-repeat: no-repeat;
+            .testata {
+                text-align: center;
+                background-color: #f1f1f1f1;
             }
-            
-            input, textarea{
-                width: 315px;
-                border: 1.5px solid;
-                color:rgb(100, 157, 214);
-                border-radius: 10px;
+
+            .collegamenti {
+                text-align: center;
+                padding: 15px;
+                background-color: #333;
             }
+
+            .collegamenti a {
+                color: #f2f2f2;
+                padding: 15px 40px;
+                text-decoration: none;
+            }
+
+            .collegamenti a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+
+            img {
+                height: 100px;
+                padding: 55px;
+                align-items: center;
+            }
+
+            input {
+                border: 1px solid;
+                border-color:#333;
+                width: 340px;
+            }
+
+            textarea {
+                border: 1px solid;
+                border-color:#333;
+                width: 340px;
+                height: 100px;
+            }
+
+            .pulsante {
+                background-color:antiquewhite;
+            }
+
+            form{
+                text-align-last: center;
+            }
+
+
 
         </style>
     </head>
-
     <body>
-    
+        <div class="testata">
+            <img src="st-intestazione.png" alt="logo st">
+        </div>
 
-        <form action="contatti">
+        <div class="collegamenti">
+            <span><a href="http://127.0.0.1:3000/about-me.html">About me</a></span>
+            <span><a href="http://127.0.0.1:3000/order-your-cake.html">Order your cake</a></span>
+            <span><a href="http://127.0.0.1:3000/contact-me.html">Contact me</a></span>
+        </div>
 
-            <div class="box">
+        <div>
+            <form action="contatti">
 
-                <div class="img-background">
+                <label for="nome">
+                    <p>NAME</p>
+                    <input type="text" id="nome" name="name" autofocus required>
+                </label>
 
-                <h1>CONTATTAMI ORA</h1>
-                <p>Richiedi la tua torta ora. Non ti prendi nessun impegno e<br> puoi avere un idea dei costi e dei tempi di realizzazione<br> del tuo prossimo ordine :)</p>
-                <div>
-                    <label for="name"><p><b>Nome*</b></p></label>
-                    <input type="text" id="name" name="name" autofocus required>
-                </div>
-    
-                <div>
-                    <label for="email"><p><b>E-mail*</b></p></label>
+                <label for="cognome">
+                    <p>SURNAME</p>
+                    <input type="text" id="cognome" name="cognome" autofocus required>
+                </label>
+
+                <label for="email">
+                    <p>EMAIL</p>
                     <input type="email" id="email" name="email" autofocus required>
-                </div>
-    
-                <div>
-                    <label for="telefono"><p><b>Telefono</b></p></label>
-                    <input type="text" id="telefono" name="telefono">
-                </div>
-    
-                <div>
-                    <label for="budget"><p><b>Il tuo budget*</b></p></label>
-                    <input type="text" id="budget" name="budget" autofocus required>
-                </div>
-    
-                <div>
-                    <p><b>Descrivi brevemente le tue preferenze*</b></p>
-                    <textarea name="text" id="testo" cols="40" rows="6"></textarea>
-                </div>
-    
-                <div>
-                    <input type="submit">
-                </div>
-                </div>
-            
-            </div>
+                </label>
 
-        </form>
+                <label for="area_di_testo">
+                    <p>MESSAGE</p>
+                    <textarea name="note" id="note"></textarea>
+                </label>
 
-      
+                <label for="pulsante">
+                    <p><input type="submit"  value="SEND MESSAGE" class="pulsante"></p>
+                </label>
+
+            </form>
+        </div>
     </body>
-    <footer></footer>
 </html>
