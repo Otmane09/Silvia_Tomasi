@@ -2,226 +2,51 @@
 <html lang="it">
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=widht-device" />
-        <title>Ordina la tua torta da Silvia</title>
+        <meta name="viewport" content="width=widht-device" initial-scale="1" />
+        <title>Silvia Tomasi homepage</title>
 
         <style>
 
-            button {
-                border: 1.5px solid;
-                size: 50px 50px;
-                background-color: beige;
-            }
-
-            hr {
-                width: 900px;
-                border: 1px solid;
-            }
-
-            a {
-            
-                padding: 10px;
-                color:blueviolet;
-                background-color: transparent;
-                text-decoration: none;
-            }
-            a:visited {
-                color: pink;
-                background-color: transparent;
-                text-decoration: none;
-            }
-
-            input {
-                border: 1.5px solid;
-                color:rgb(100, 157, 214);
-                width: 133px;
-                
-            }
-
-            textarea {
-
-                border: 1.5px solid;
-                color:rgb(100, 157, 214);
-                width: 250px;
-
-            }
-            
             body {
+                margin: 0px;
+            }
+
+            div.testata {
+                background-color: rgb(247, 244, 241);
+                padding: 35px;
                 text-align: center;
-                background-color: rgb(251, 231, 230);
             }
 
-            #pie_di_pagina {
-                font-size: smaller;
+            div.collegamenti {
+                overflow: hidden;
+                background-color: rgb(247, 244, 241);
+                text-align: center;
+                padding: 10px 20px;
+                display: block;
+                text-decoration:solid;
             }
+            
 
-            h1, h2, p{
-                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                
+            .collegamenti a:hover {
+                background-color: #ddd;
+                color: rgb(54, 54,54;
             }
-
         </style>
+
+
     </head>
-
     <body>
-
-        <span><b><a href="http://127.0.0.1:3000/Users/otmanekhaddadi/Documents/Programmazione 1/css/contact-me.html">Contact me</a></b></span>
-        <span><b><a href="http://127.0.0.1:3000/Users/otmanekhaddadi/Documents/Programmazione 1/css/about-me.html">About me</a></b></span>
-           
-
-        <form action="http://127.0.0.1:3000" method="get">
-            
+        <div class="testata">
             <h1>Silvia Tomasi | Pastry chef</h1>
-            <h2>Ordina la tua torta online</h2>
+        </div>
 
-            <div>
-                <p><b>Calcola</b></p>
-                <p>Inserisci il numero dei tuoi invitati</p>
-                
-                <p><b>Scegli</b></p>
-                <p>Puoi scegliere ed ordinare la tua torta preferita</p>
-                
-                <p><b>Crea</b></p>
-                <p>Puoi creare e ordinare la tua torta ideale scegliendo tra le varie opzioni</p>
-            
-            </div>
-
-            <hr>
-
-            <!-- Scegli la tua torta -->
-
-            <div>
-                    <p><b>Scegli la tua torta</b></p>
-                    <div>
-                        Tipo:
-                        <select name="scegli-la_tua_torta" id="scegli-la_tua_torta">
-                        
-                            <option value="xx">Seleziona la tua torta</option>
-                            <option value="Crostata di frutta">Crostata di frutta</option>
-                            <option value="Crostata di marmellata">Crostata di marmellata</option>
-                            <option value="Sacher">Sacher</option>
-                            <option value="Tiramisu`">Tiramisu`</option>
-                        
-                        </select>
-                    </div>
-
-                    <div>
-
-                        <label for="data">Data di consegna:</label>
-                            <input type="date" id="data" name="data" >
-
-                    </div>
-
-                    <div>
-
-                        <textarea name="note" id="note" cols="30" rows="5">Note</textarea>
-
-                    </div>
-            </div>
-
-            <hr>
-
-            <!--Crea la tua torta-->
-
-            <div>
-               
-                    <p><b>Crea la tua torta</b></p>
-                    <div>
-                        <Span>Base:</Span>
-                        <select name="La base" id="La base">
-                            <option value="Scegli">Scegli</option>
-                            <option value="Pasta frolla">Pasta frolla</option>
-                            <option value="Pan di Spagna bianco">Pan di Spagna bianco</option>
-                            <option value="Pan di Spagna al cioccolato ">Pan di Spagna al cioccolato</option>
-        
-                        </select>
-
-                        <span>Ripieno:</span>
-                        <select name="ripieno" id="ripieno">
-                            <option value="Scegli">Scegli</option>
-                            <option value="Crema pasticcera">Crema pasticcera</option>
-                            <option value="Crema chantilly">Crema chantilly</option>
-                            <option value="Crema al cioccolato">Crema al cioccolato</option>
-                            <option value="Panna">Panna</option>
-                            <option value="Mascarpone">Mascarpone</option>
-                            <option value="Marmellata">Marmellata</option>
-        
-                        </select>
-
-                        <Span>Copertura:</Span>
-                        <select name="copertura" id="copertura">
-                            <option value="Scegli">Scegli</option>
-                            <option value="Frutta">Frutta</option>
-                            <option value="Panna">Panna</option>
-                            <option value="Glassa al cioccolato">Glassa al cioccolato</option>
-                            <option value="Crema al burro">Crema al burro</option>
-                            <option value="Marmellata">Marmellata</option>
-        
-                        </select>
-
-                        <span>Decorazioni:</span>
-                        <select name="decorazioni" id="decorazioni">
-                            <option value="Scegli">Scegli</option>
-                            <option value="Compleanno">Compleanno</option>
-                            <option value="Nessuna">Nessuna</option>
-                            <option value="Altro">Altro</option>
-        
-                        </select>
-                    </div>
-
-                    <div>
-                        <label for="data">Data di consegna:</label>
-                            <input type="date">
-                    </div>
-
-                    <div>
-                        <textarea name="note" id="note" cols="30" rows="5">Note</textarea>
-                    </div>
-
-                <hr>
-
-                <!--I tuoi dati-->
-        
-            
-                    <p><b>I tuoi dati</b></p>
-                    <div>
-                        <label for="nome"><span>Nome:</span></label>
-                            <strong><abbr title="richiesto">*</abbr></strong>
-                            <input type="text" id="nome" name="I tuoi dati" autofocus required>
-                        
-
-                        <label for="cognome"><span>Cognome:</span></label>
-                            <strong><abbr title="richiesto">*</abbr></strong>
-                            <input type="text" id="cognome" name="I tuoi dati" autofocus required>
-                        
-
-                        <label for="telefono"><span>Telefono:</span></label>
-                            <strong><abbr title="richiesto">*</abbr></strong>
-                            <input type="text" id="telefono" name="I tuoi dati" autofocus required>
-                        
-
-                        <label for="e-mail"><span>E-mail:</span></label>
-                            <strong><abbr title="richiesto">*</abbr></strong>
-                            <input type="email" id="e-mail" name="I tuoi dati" autofocus required>
-                        
-                    </div>
-
-                    <div>
-                    
-                        <button>Ordina la tua torta</button>
-                        <button>Reset</button>
-    
-                    </div>
-                
-        </form>
-
+        <div class="collegamenti">
+            <a href="about_me">About me</a>
+            <a href="order_your_cake">Order your cake</a>
+            <a href="contact_me">Contact me</a>
+        </div>
     </body>
+</html>
 
-    <hr>
-
-    <footer>
-        <p id="pie_di_pagina">I campi obbligatori sono contrassegnati da <strong><abbr title="richiesto">*</abbr></strong></p>
-    </footer>
-
-
-    </html>
+        
+           
