@@ -35,10 +35,35 @@
                 color: black;
             }
 
+
             img {
                 height: 100px;
                 padding: 20px;
                 align-items: center;
+            }
+
+            .colonna {
+                float:left;
+                width: 33,33%;
+                padding: 65px;
+            }
+
+            form {
+                text-align: center;
+                border: 3px solid rgb(53, 53, 53);
+                border-radius: 25px;
+                height: 500px;
+                width: 250px;
+                padding: 30px;
+            }
+
+            input, select {
+                width: 200px;
+            }
+
+            textarea {
+                width: 200px;
+                height: 100px;
             }
 
         </style>
@@ -52,6 +77,121 @@
             <span><a href="http://127.0.0.1:3000/about-me.html">About me</a></span>
             <span><a href="http://127.0.0.1:3000/order-your-cake.html">Order your cake</a></span>
             <span><a href="http://127.0.0.1:3000/contact-me.html">Contact me</a></span>
+        </div>
+
+        <!--Scegli la tua torta-->
+
+        <div class="colonna" id="scegli_la_tua_torta">
+            <form action="scegli_la_tua_torta">
+                <h1>SCEGLI<br> LA TUA TORTA</h1>
+
+                <p>CLASSICHE</p>
+
+                <select name="classiche" id="classiche">
+                    
+                    <option value="seleziona_la_tua_torta">Seleziona la tua torta</option>
+                    <option value="crostata_di_frutta">Crostata di frutta</option>
+                    <option value="crostata_di_marmellata">Crostata di marmellata</option>
+                    <option value="sacher">Sacher</option>
+                    <option value="tiramisu_classico">Tiramisu`classico</option>
+                    <option value="tiramisu_al_pistacchio">Tiramisu` al pistacchio</option>
+                </select>
+
+               <label for="numero_persone">
+                <p>NUMERO DI PERSONE</p>
+                <input type="text" id="numero_persone" name="numero_persone">
+               </label>
+
+               <label for="data_consegna">
+                <p>DATA DI CONSEGNA</p>
+                <input type="date" id="data_consegna" name="data_consegna">
+               </label>
+            </form>
+        </div>
+
+         <!--Crea la tua torta-->
+
+        <div class="colonna" id="crea_la_tua_torta">
+            <form action="scegli_la_tua_torta">
+                <h1>CREA<br> LA TUA TORTA</h1>
+
+                <p>BASE</p>
+
+                <select name="base" id="base">
+                    <option value="seleziona_base">Seleziona base</option>
+                    <option value="pasta_frolla">Pasta frolla</option>
+                    <option value="pan_di_spagna_bianco">Pan di Spagna bianco</option>
+                    <option value="pan_di_spagna_cioccolato">Pan di Spagna cioccolato</option>
+                </select>
+
+                <p>RIPIENO</p>
+
+                <select name="ripieno" id="ripieno">
+                    <option value="seleziona_ripieno">Seleziona ripieno</option>
+                    <option value="crema_pasticcera">Crema pasticcera</option>
+                    <option value="crema_chantilly">Crema chantilly</option>
+                    <option value="crema_cioccolato">Crema cioccolato</option>
+                    <option value="mascarpone">Mascarpone</option>
+                    <option value="marmellata">Marmellata</option>
+                    <option value="panna">Panna</option>
+                </select>
+
+                <p>COPERTURA</p>
+
+                <select name="copertura" id="copertura">
+                    <option value="seleziona_copertura">Seleziona copertura</option>
+                    <option value="crema_burro">Crema al burro</option>
+                    <option value="frutta">Frutta</option>
+                    <option value="glassa_cioccolato">Glassa al cioccolato</option>
+                    <option value="glassa_cioccolato_bianco">Glassa al cioccolato bianco</option>
+                    <option value="marmellata">Marmellata</option>
+                    <option value="panna">Panna</option>
+                </select>
+                
+                <label for="numero_persone">
+                    <p>NUMERO DI PERSONE</p>
+                    <input type="text" id="numero_persone" name="numero_persone">
+                </label>
+    
+                <label for="data_consegna">
+                    <p>DATA DI CONSEGNA</p>
+                    <input type="date" id="data_consegna" name="data_consegna">
+                </label>
+            </form>
+        </div>
+
+        <!--I tuoi dati-->
+               
+        <div class="colonna">
+
+            <form action="dati_personali">
+
+                <h1>I<br>TUOI DATI</H1>
+
+                <label for="nome">
+                    <p>NAME</p>
+                    <input type="text" id="nome" name="name" autofocus required>
+                </label>
+
+                <label for="cognome">
+                    <p>SURNAME</p>
+                    <input type="text" id="cognome" name="cognome" autofocus required>
+                </label>
+
+                <label for="email">
+                    <p>EMAIL</p>
+                    <input type="email" id="email" name="email" autofocus required>
+                </label>
+
+                <label for="area_di_testo">
+                    <p>MESSAGE</p>
+                    <textarea name="note" id="note"></textarea>
+                </label>
+
+                <label for="pulsante">
+                    <p><input type="submit"  value="SEND MESSAGE" class="pulsante"></p>
+                </label>
+            </form>
         </div>
     </body>
 </html>
