@@ -6,13 +6,13 @@
         <title>Order your cake</title>
 
         <style>
-
-
             body {
                 margin: 0px;
+                justify-content: center;
             }
 
             .testata {
+                overflow: hidden;
                 text-align: center;
                 background-color: #f1f1f1f1;
                 padding: 35px;
@@ -43,9 +43,10 @@
             }
 
             .colonna {
-                float:left;
-                width: 33,33%;
-                padding: 65px;
+                display: flex;
+                justify-content: center;
+                justify-content: space-around;
+                padding: 50px;
             }
 
             form {
@@ -69,6 +70,7 @@
         </style>
     </head>
     <body>
+
         <div class="testata">
             <img src="st-intestazione.png" alt="logo st">
         </div>
@@ -107,11 +109,9 @@
                 <input type="date" id="data_consegna" name="data_consegna">
                </label>
             </form>
-        </div>
 
-         <!--Crea la tua torta-->
+            <!--Crea la tua torta-->
 
-        <div class="colonna" id="crea_la_tua_torta">
             <form action="scegli_la_tua_torta">
                 <h1>CREA<br> LA TUA TORTA</h1>
 
@@ -158,11 +158,8 @@
                     <input type="date" id="data_consegna" name="data_consegna">
                 </label>
             </form>
-        </div>
 
-        <!--I tuoi dati-->
-               
-        <div class="colonna">
+            <!--I tuoi dati-->
 
             <form action="dati_personali">
 
