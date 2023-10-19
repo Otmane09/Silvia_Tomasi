@@ -2,8 +2,9 @@
 <html lang="it">
     <head>
         <meta charset="utf-8 ">
-        <meta name="viewport" content="width=width-device" initial-scale="1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contact me</title>
+        <script src="https://kit.fontawesome.com/6bbe57906b.js" crossorigin="anonymous"></script>
 
         <style>
 
@@ -59,16 +60,22 @@
                 background-color:antiquewhite;
             }
 
-            form{
-                text-align-last: center;
+            .colonna {
+                display: flex; 
+                justify-content: center;
+                justify-content: space-around;
+                padding: 55px;
+            }
+
+            form {
+                text-align: center;
             }
 
             .footer {
                 color: white;
                 background-color: #333;
                 text-align: center;
-                padding: 35px;
-
+                padding: 20px;
             }
         </style>
     </head>
@@ -83,7 +90,8 @@
             <span><a href="http://127.0.0.1:3000/contact-me.html">Contact me</a></span>
         </div>
 
-        <div>
+        <div class="colonna">
+
             <form action="contatti">
 
                 <label for="nome">
@@ -113,6 +121,9 @@
             </form>
         </div>
 
-        <div class="footer">contatto instagram da aggiungere</div>
+        <!--footer-->
+        <div class="footer">
+            <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i>
+            <span>@silvia_tomasi_</span>
     </body>
 </html>
