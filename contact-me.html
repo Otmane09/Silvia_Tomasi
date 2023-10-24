@@ -8,6 +8,13 @@
 
         <style>
 
+            @media screen and (max-width: 600px) {
+
+                .logo { width: 50%; height: auto;}
+                .collegamenti { display: flex; flex-direction: column; line-height: 35px;}
+                
+              }
+
 
             body {
                 margin: 0px;
@@ -77,11 +84,16 @@
                 text-align: center;
                 padding: 20px;
             }
+
+            .instagram {
+                color: white;
+                text-decoration: none;
+            }
         </style>
     </head>
     <body>
         <div class="testata">
-            <img src="st-intestazione.png" alt="logo st">
+            <img src="st-intestazione.png" alt="logo st" class="logo">
         </div>
 
         <div class="collegamenti">
@@ -124,6 +136,7 @@
         <!--footer-->
         <div class="footer">
             <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i>
-            <span>@silvia_tomasi_</span>
+            <span><a href="https://instagram.com/silvia_tomasi_?igshid=MzRlODBiNWFlZA==" class="instagram">@silvia_tomasi_</a></span>
+        </div>
     </body>
 </html>
