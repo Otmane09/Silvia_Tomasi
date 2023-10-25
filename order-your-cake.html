@@ -12,9 +12,10 @@
 
             .logo { width: 50%; height: auto;}
 
-            .collegamenti { display: flex; flex-direction: column; line-height: 35px;}
+            .navbar { display: flex; flex-direction: column; line-height: 35px;}
 
             .scheda { display: flex; flex-direction: column; align-items: center;}
+            
             }
 
             body {
@@ -29,19 +30,19 @@
                 padding: 35px;
             }
 
-            .collegamenti {
+            .navbar {
                 text-align: center;
                 padding: 15px;
                 background-color: #333;
             }
 
-            .collegamenti a {
+            .navbar a {
                 color: #f2f2f2;
                 padding: 15px 40px;
                 text-decoration: none;
             }
 
-            .collegamenti a:hover {
+            .navbar  a:hover {
                 background-color: #ddd;
                 color: black;
             }
@@ -93,22 +94,25 @@
         </style>
     </head>
     <body>
-    
-      <div class="grid-container">
 
-        <div class="testata">
+        <div class="testata"> <!--intestazione-->
+
             <img src="st-intestazione.png" alt="logo st" class="logo">
+
         </div>
 
-        <div class="collegamenti">
+        <div class="navbar"> <!--barra di navigazione-->
+
             <span><a href="http://127.0.0.1:3000/about-me.html">About me</a></span>
             <span><a href="http://127.0.0.1:3000/order-your-cake.html">Order your cake</a></span>
             <span><a href="http://127.0.0.1:3000/contact-me.html">Contact me</a></span>
+
         </div>
 
       </div>
 
         <div class="scheda">
+
             <form action="scegli_la_tua_torta"> <!--Scegli la tua torta-->
                 <h1>SCEGLI<br> LA TUA TORTA</h1>
 
@@ -209,14 +213,17 @@
                 <label for="pulsante">
                     <p><input type="submit"  value="SEND MESSAGE" class="pulsante"></p>
                 </label>
+
             </form>
+
         </div>
 
         <div class="footer">  <!--footer-->
+
             <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i>
             <span><a href="https://instagram.com/silvia_tomasi_?igshid=MzRlODBiNWFlZA==" class="instagram">@silvia_tomasi_</a></span>
+
         </div>
 
-      </div>
     </body>
 </html>

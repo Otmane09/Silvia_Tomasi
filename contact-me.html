@@ -12,7 +12,7 @@
 
                 .logo { width: 50%; height: auto;}
 
-                .collegamenti { display: flex; flex-direction: column; line-height: 35px;}
+                .navbar { display: flex; flex-direction: column; line-height: 35px;}
 
                 input, textarea { width: 100%; height: auto; }
                 
@@ -30,19 +30,19 @@
                 background-color: #f1f1f1f1;
             }
 
-            .collegamenti {
+            .navbar {
                 text-align: center;
                 padding: 15px;
                 background-color: #333;
             }
 
-            .collegamenti a {
+            .navbar a {
                 color: #f2f2f2;
                 padding: 15px 40px;
                 text-decoration: none;
             }
 
-            .collegamenti a:hover {
+            .navbar a:hover {
                 background-color: #ddd;
                 color: black;
             }
@@ -70,7 +70,7 @@
                 background-color:antiquewhite;
             }
 
-            .colonna {
+            .corpo {
                 display: flex; 
                 justify-content: center;
                 justify-content: space-around;
@@ -93,19 +93,26 @@
                 text-decoration: none;
             }
         </style>
+
     </head>
+
     <body>
+
         <div class="testata"> <!--intestazione-->
+
             <img src="st-intestazione.png" alt="logo st" class="logo">
+
         </div>
 
-        <div class="collegamenti">
+        <div class="navbar"> <!--barra di navigazione-->
+
             <span><a href="http://127.0.0.1:3000/about-me.html">About me</a></span>
             <span><a href="http://127.0.0.1:3000/order-your-cake.html">Order your cake</a></span>
             <span><a href="http://127.0.0.1:3000/contact-me.html">Contact me</a></span>
+
         </div>
 
-        <div class="colonna"> <!--corpo pagina-->
+        <div class="corpo"> <!--corpo pagina-->
 
             <form action="contatti">
 
@@ -134,11 +141,15 @@
                 </label>
 
             </form>
+
         </div>
 
         <div class="footer">  <!--pie´ di pagina-->
+
             <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i>
             <span><a href="https://instagram.com/silvia_tomasi_?igshid=MzRlODBiNWFlZA==" class="instagram">@silvia_tomasi_</a></span>
+
         </div>
+        
     </body>
 </html>
